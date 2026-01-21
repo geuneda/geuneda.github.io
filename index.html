@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyQuest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card h2 {
+            color: #00d9ff;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .info-item {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .info-item:last-child { border-bottom: none; }
+        .info-label {
+            color: #888;
+            width: 100px;
+            flex-shrink: 0;
+        }
+        .info-value a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        .info-value a:hover { text-decoration: underline; }
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid #00d9ff;
+            color: #00d9ff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .link-btn:hover {
+            background: #00d9ff;
+            color: #1a1a2e;
+        }
+        footer {
+            text-align: center;
+            color: #555;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DailyQuest</h1>
+            <p class="tagline">Mobile Application Developer</p>
+        </header>
+
+        <div class="card">
+            <h2>About</h2>
+            <p>DailyQuest는 모바일 애플리케이션을 개발하는 1인 개발 조직입니다. 사용자에게 가치 있는 앱 경험을 제공하기 위해 노력하고 있습니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>Developer Info</h2>
+            <div class="info-item">
+                <span class="info-label">Developer</span>
+                <span class="info-value">DailyQuest</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Representative</span>
+                <span class="info-value">Youhyun Eom</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contact</span>
+                <span class="info-value"><a href="mailto:contact.dailyquest@gmail.com">contact.dailyquest@gmail.com</a></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Links</h2>
+            <div class="links">
+                <a href="privacy-policy.html" class="link-btn">Privacy Policy</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 DailyQuest. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
